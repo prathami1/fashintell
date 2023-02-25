@@ -1,7 +1,7 @@
 import '../App.css';
 import React from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
-import {db} from '../firebase';
+import {db} from '../services/firebase';
 
 //components
 import Heading from '../components/Heading'
