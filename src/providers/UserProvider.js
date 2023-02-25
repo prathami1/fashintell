@@ -13,6 +13,6 @@ auth.onAuthStateChanged(async (user) => {
 })
   },[])
   return (
-    <UserContext.Provider value={user}>{props.children}</UserContext.Provider>
+    <UserContext.Provider value={user}>{this.props.children}</UserContext.Provider>
   )
 }
