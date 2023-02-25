@@ -7,6 +7,8 @@ import {db} from '../services/firebase';
 import Heading from '../components/Heading'
 import Sidebar from '../components/Sidebar';
 import Tabs from '../components/Tabs'
+import Card from '../components/Card'
+import Saved from '../components/Saved'
 
 function Home() {
   return (
@@ -15,6 +17,11 @@ function Home() {
         <Heading/>
         <Sidebar/>
         <Tabs/>
+        <Card/>
+        <div style={{marginRight: "auto"}}>
+          <Saved/>
+        </div>
+        
       </header>
     </div>
   );
