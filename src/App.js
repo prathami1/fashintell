@@ -1,22 +1,24 @@
-import './App.css';
-import React, { useState, useEffect } from 'react';
-import { collection, addDoc, getDocs } from "firebase/firestore";
-import {db} from './firebase';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //components
-import Heading from './components/Heading'
-import Sidebar from './components/Sidebar';
-import Tabs from './components/Tabs'
+import Home from './pages/Home'
+import Login from './pages/Login'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">    
-        <Heading/>
-        <Sidebar/>
-        <Tabs/>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route 
+          path='/'
+          element={<Home/>}
+        />
+        <Route 
+          path='/login'
+          element={<Login/>}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
