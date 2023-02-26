@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/FashIntell/static/css/main.6e96dea9.css",
+    "main.js": "/FashIntell/static/js/main.98f060fc.js",
+    "static/media/joggers.jpg": "/FashIntell/static/media/joggers.d80dfb1db9281644cc9e.jpg",
+    "static/media/fit3.jpg": "/FashIntell/static/media/fit3.fd8927bc0b87e7e73f4d.jpg",
+    "static/media/fit2.jpg": "/FashIntell/static/media/fit2.0a71742e5c2e62b946c3.jpg",
+    "static/media/Gucci.jpg": "/FashIntell/static/media/Gucci.dda551fee0881c0ce436.jpg",
+    "static/media/jean.jpg": "/FashIntell/static/media/jean.3ea607b447668aecb4c9.jpg",
+    "index.html": "/FashIntell/index.html",
+    "main.6e96dea9.css.map": "/FashIntell/static/css/main.6e96dea9.css.map",
+    "main.98f060fc.js.map": "/FashIntell/static/js/main.98f060fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e96dea9.css",
+    "static/js/main.98f060fc.js"
+  ]
+}
