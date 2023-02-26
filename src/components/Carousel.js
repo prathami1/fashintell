@@ -3,7 +3,7 @@ import React from 'react';
 import fit2 from '../img/fit2.jpg';
 import fit3 from '../img/fit3.jpg';
 // let fits = require("/Users/abhaybenoy/Main-Files/Hacking/fashintell/src/fashImages2.json")
-// let ids = require("/Users/abhaybenoy/Main-Files/Hacking/fashintell/src/fashImages.json")
+let ids = require("/Users/abhaybenoy/Main-Files/Hacking/fashintell/src/fashImages.json")
 // console.log(ids["00000867-01"])
 // let list = ["00000867-01", "00002760-01", "00007607-01", "00000084-04"]
 // let arr = ids[list[2]]
