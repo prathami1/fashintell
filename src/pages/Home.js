@@ -18,10 +18,9 @@ function Home() {
         <Sidebar/>
         <Tabs/>
         <Card/>
-        <div style={{marginRight: "auto"}}>
+        {/* <div style={{marginRight: "auto"}}>
           <Saved/>
-        </div>
-        
+        </div> */}
       </header>
     </div>
   );
