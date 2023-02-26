@@ -13,12 +13,10 @@ function Home() {
     <div className="App">
       <header className="App-header">
         <Heading/>
-        <Sidebar/>
-        <Tabs/>
-        <Card/>
-        {/* <div style={{marginRight: "auto"}}>
-          <Saved/>
-        </div> */}
+        <Sidebar />
+        {/* <Tabs/> */}
+        <Card />
+        <Saved />
       </header>
     </div>
   );

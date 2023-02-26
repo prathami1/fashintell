@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import Shop from '../pages/Shop'
+import Card from './Card'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example(props) {
-  let [categories] = useState({
+export default function Tabs(props) {
+  let [categories, setCategories] = useState({
     "For You": [
       {
         
@@ -41,46 +42,28 @@ export default function Example(props) {
             </Tab>
           ))}
         </Tab.List>
-        {/* <Tab.Panels className="mt-2">
-          {Object.values(categories).map((posts, idx) => (
+        <Tab.Panels className="mt-2">
             <Tab.Panel
-              key={idx}
+              key={1}
               className={classNames(
                 'rounded-xl bg-white p-3',
                 'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
               )}
             >
-              <ul>
-                {posts.map((post) => (
-                  <li
-                    key={post.id}
-                    className="relative rounded-md p-3 hover:bg-gray-100"
-                  >
-                    <h3 className="text-sm font-medium leading-5">
-                      {post.title}
-                    </h3>
-
-                    <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-                      <li>{post.date}</li>
-                      <li>&middot;</li>
-                      <li>{post.commentCount} comments</li>
-                      <li>&middot;</li>
-                      <li>{post.shareCount} shares</li>
-                    </ul>
-
-                    <a
-                      href="#"
-                      className={classNames(
-                        'absolute inset-0 rounded-md',
-                        'ring-blue-400 focus:z-10 focus:outline-none focus:ring-2'
-                      )}
-                    />
-                  </li>
-                ))}
-              </ul>
+              {/* <Card /> */}
+              <h1>main</h1>
             </Tab.Panel>
-          ))}
-        </Tab.Panels> */}
+            <Tab.Panel
+              key={2}
+              className={classNames(
+                'rounded-xl bg-white p-3',
+                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
+              )}
+            >
+              {/* <Shop /> */}
+              <h1>Test</h1>
+            </Tab.Panel>
+        </Tab.Panels>
       </Tab.Group>
     </div>
   )

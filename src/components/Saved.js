@@ -1,161 +1,52 @@
 import React from 'react';
-
+import gucci from '../img/Gucci.jpg'
+import dior from '../img/jean.jpg'
+import joggers from '../img/joggers.jpg'
 import Disclosure from './Disclosure'
 
 function Saved(props) {
     return (
-        <>
-            <Disclosure
-                title1 = "Gender"
-                content1 = {
-                    <div class="flex justify-center">
-                    <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white items-center">
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="male-checkbox" type="checkbox" value="Male" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                            <label for="male-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Male</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="female-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="female-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="re-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="re-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Non Binary</label>
-                        </div>
-                    </li>
-                    </ul>
+        <div className='fixed top-0 right-0 w-72 h-full bg-gray-50 text-black overflow-scroll'>
+            <h1 className='font-semibold mt-3'>Popular Styles</h1>
+
+            <div class="w-5/6 mx-auto bg-white border-blue-600 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 border-4">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg" src={gucci} alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white pb-5 pt-10">Gucci Full-Zip Sweater Italian</h5>
+                    </a>
+                    <div class="flex items-center justify-between pt-3">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">$100</span>
+                        <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        font-medium rounded-lg text-sm px-3 py-2.5 text-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300">
+                            Add to cart
+                        </a>
                     </div>
-                }
-                title2 = "Sleeve"
-                content2 = {
-                    <div class="flex justify-center">
-                    <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white items-center">
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="no-sleeve-checkbox" type="checkbox" value="Sleeve" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                            <label for="no-sleeve-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No Sleeve</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="short-sleeve-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="short-sleeve-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Short Sleeve</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="long-sleeve-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="long-sleeve-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Long Sleeve</label>
-                        </div>
-                    </li>
-                    </ul>
+                </div>
+            </div>
+
+            <div class="w-5/6 mx-auto my-4 bg-white border-blue-600 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 border-4">
+                <a href="#">
+                    <img class="p-8 rounded-t-lg" src={joggers} alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white pb-5 pt-10">Unisex Charcoal Jogger</h5>
+                    </a>
+                    <div class="flex items-center justify-between pt-3">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">$19</span>
+                        <a href="#" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
+                        font-medium rounded-lg text-sm px-3 py-2.5 text-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300">
+                            Add to cart
+                        </a>
                     </div>
-                }
-                title3 = "Design"
-                content3 = {
-                    <div class="flex justify-center">
-                    <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white items-center">
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="floral-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="floral-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Floral</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="graphic-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="graphic-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Graphic</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="striped-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="striped-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Striped</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="pure-color-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="pure-color-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Pure Color</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="lattice-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="lattice-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Lattice</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="color-block-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="color-block-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Color Block</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="other-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="other-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other</label>
-                        </div>
-                    </li>
-                    </ul>
-                    </div>
-                }
-                title4 = "Material"
-                content4 = {
-                    <div class="flex justify-center">
-                    <ul class="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white items-center">
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="denim-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="denim-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Denim</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="cotton-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="cotton-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cotton</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="leather-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="leather-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Leather</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="fur-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="fur-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fur</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="knitted-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="knitted-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Knitted</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="chiffron-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="chiffron-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Chiffron</label>
-                        </div>
-                    </li>
-                    <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                        <div class="flex items-center pl-3">
-                            <input id="other2-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"></input>
-                            <label for="other2-checkbox" class="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other</label>
-                        </div>
-                    </li>
-                    </ul>
-                    </div>
-                }
-            />
-        </>
+                </div>
+            </div>
+
+
+        </div>
     );
 }
 
