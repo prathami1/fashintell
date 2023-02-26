@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
+import { getFirestore, doc, setDoc } from "firebase/firestore";
 import { initializeApp } from 'firebase/app';
 import {getAuth, GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
+
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -15,14 +17,21 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);
 
 const prov = new GoogleAuthProvider();
+
+function writeUserData(userId, n, e) {
+  setDoc(doc(db, "users", userId), {
+    name: n,
+    email: e
+  });
+}
 
 export const signInGoogle = () => {
   signInWithPopup(auth, prov)
     .then((result) => {
-      const name = result.user.displayName;
-      const email = result.user.email;
+      writeUserData(result.user.uid, result.user.displayName, result.user.email)
   }).catch((error) => {
     console.log(error);
   });
