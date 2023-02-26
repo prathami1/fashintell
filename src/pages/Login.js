@@ -1,6 +1,5 @@
 import '../App.css';
 import Heading from '../components/Heading'
-import { Dialog } from '@headlessui/react'
 import { signInGoogle } from '../services/firebase';
 
 function Login () {
