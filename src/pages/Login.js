@@ -1,6 +1,6 @@
 import '../App.css';
 import Heading from '../components/Heading'
-import { signInGoogle } from '../services/firebase';
+import { signInGoogle } from '../services/Firebase';
 
 function Login () {
     return(
